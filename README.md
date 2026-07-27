@@ -161,12 +161,9 @@ cross-context-collaboration-ergm/
 │   ├── github/
 │   └── sciscinet/
 ├── results/
-│   ├── separate_networks/
-│   ├── block_diagonal/
-│   └── figures/
-└── supplementary/
-    ├── network_documentation/
-    └── reports/
+    ├── separate_networks/
+    ├── block_diagonal/
+    └── figures/
 ```
 
 Folder-level README files should document the inputs, outputs, temporal windows, threshold choices, and execution order for each analysis.
@@ -182,8 +179,6 @@ The current model outputs and reports are:
 | `all_journal_ergm_results.xlsx` | Separate-network results for the eleven SciSciNet journal networks |
 | `block_diagonal_language_ergm_results.xlsx` | GitHub language block-diagonal ERGM results and block summaries |
 | `block_diagonal_journal_ergm_results.xlsx` | SciSciNet journal block-diagonal ERGM results and block summaries |
-| `Github Report.docx` | GitHub variable definitions and included-language documentation |
-| `Sciscinet Report.docx` | SciSciNet variable definitions and included-journal documentation |
 
 Most result workbooks contain the following sheets:
 
