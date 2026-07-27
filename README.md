@@ -10,15 +10,6 @@ The analysis uses the cleaned and unified versions of these datasets made public
 
 The study asks whether prior collaboration, expertise, and leadership-related status are associated with current collaboration ties, and whether the observed associations are consistent across team-formation, open-source, and scientific settings.
 
-## Research questions
-
-The analyses address two main questions:
-
-1. How are prior collaboration, expertise, expertise similarity, leadership-related status, and leadership similarity associated with collaboration ties within individual networks?
-2. Which associations remain consistent when multiple networks from the same domain are estimated together using a block-diagonal ERGM?
-
-The three domains are not pooled into a single cross-domain network. Separate-network ERGMs are estimated for each network. Block-diagonal ERGMs are estimated only within the GitHub and SciSciNet domains.
-
 ## Source data and availability
 
 The data used in this study were downloaded from a [publicly accessible OSF project](https://osf.io/mjhpd/overview?view_only=af9133fb34db457daabde1966c6c90b8) that provides cleaned and unified heterogeneous-graph versions of MyDreamTeam, GHTorrent, and SciSciNet. Each source dataset is independent; there are no overlapping entities or shared identifiers across the three datasets.
@@ -179,15 +170,6 @@ The current model outputs and reports are:
 | `all_journal_ergm_results.xlsx` | Separate-network results for the eleven SciSciNet journal networks |
 | `block_diagonal_language_ergm_results.xlsx` | GitHub language block-diagonal ERGM results and block summaries |
 | `block_diagonal_journal_ergm_results.xlsx` | SciSciNet journal block-diagonal ERGM results and block summaries |
-
-Most result workbooks contain the following sheets:
-
-- `coefficients`: estimates from the complete M4 model;
-- `model_fit`: AIC and BIC for the M0–M4 sequence;
-- `network_summary`, `block_summary`, or an equivalent summary sheet: network sizes and densities; and
-- `failed_models`: any model or input-folder failures recorded during batch estimation.
-
-The separate SciSciNet workbook currently contains a `.Rproj.user` folder warning in `failed_models`. This is a non-data directory detected during batch processing and is not one of the eleven journal networks.
 
 ## Reproducing the analysis
 
