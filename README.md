@@ -237,7 +237,7 @@ A complete manuscript citation and DOI will be added after publication.
 
 ## License
 
-The original data remain subject to the licensing and terms specified by the OSF project and the underlying data providers. No repository-wide license is implied for third-party data. A separate license for original code and documentation should be added before the repository is formally released.
+The original data remain subject to the licensing and terms specified by the OSF project and the underlying data providers. No repository-wide license is implied for third-party data.
 
 ## Contact
 
