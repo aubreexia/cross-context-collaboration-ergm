@@ -1,24 +1,4 @@
-"""Build analysis-ready MyDreamTeam inputs from the two source CSV files.
 
-Required source files
----------------------
-1. users_profiles.csv
-   Required columns: user_id, team_id, leadership.score, and one or more
-   columns whose names begin with project.skill.
-2. relationships.csv
-   Required columns: network_type, source, and target.
-
-The script:
-- derives team membership directly from users_profiles.csv;
-- computes expertise as the row mean of project.skill* columns;
-- extracts leadership.score;
-- constructs undirected same-team collaboration edges;
-- constructs a binary, undirected prior-work matrix from relationships.csv;
-- removes isolates and users without complete covariates;
-- writes audit tables and a count-reconciliation summary.
-
-Source files are never modified.
-"""
 
 from __future__ import annotations
 
