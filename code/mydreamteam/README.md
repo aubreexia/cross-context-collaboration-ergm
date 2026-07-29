@@ -1,289 +1,188 @@
-# MyDreamTeam analysis
+# MyDreamTeam Network Preparation and ERGM Workflow
 
-This directory contains the scripts used to construct the MyDreamTeam collaboration network and estimate the separate-network exponential random graph models (ERGMs).
-
-The workflow contains two steps:
-
-1. Python preprocessing and network construction;
-2. R-based ERGM estimation.
-
-## Directory contents
+This directory contains the reproducible MyDreamTeam workflow:
 
 ```text
 code/mydreamteam/
 ├── README.md
-├── 01_prepare_mdt_ergm_inputs.py
-└── 02_run_mdt_ergm.R
+├── 01_prepare_mdt_session_networks.py
+├── 02_mdt_separate_ergm.R
+└── 03_mdt_block_diagonal_ergm.R
 ```
 
-| File | Description |
-| --- | --- |
-| `01_prepare_mdt_ergm_inputs.py` | Constructs the node table, current collaboration edges, and prior-collaboration matrix |
-| `02_run_mdt_ergm.R` | Draws the observed network and estimates the M0–M4 ERGM sequence |
+The Python script converts the two raw MyDreamTeam files into analysis-ready, session-level networks and aligned covariates. The two R scripts then estimate separate-session and block-diagonal ERGMs.
 
-## Source data
+MyDreamTeam is a web-based platform through which participants create profiles, search for collaborators, send invitations, and assemble project teams. The participants in these data were students enrolled in academic or executive-education programs and worked on a shared creative task.
 
-The workflow begins with two source files:
+## Raw inputs
+
+Download the source files from the project’s [OSF page](https://osf.io/mjhpd/overview?view_only=af9133fb34db457daabde1966c6c90b8) and place them at:
 
 ```text
-data/raw/mydreamteam/
-├── users_profiles.csv
-└── relationships.csv
+data/raw/mydreamteam/users_profiles.csv
+data/raw/mydreamteam/relationships.csv
 ```
 
-The files used in this study were obtained from the public OSF project:
+### `users_profiles.csv`
 
-https://osf.io/mjhpd/overview?view_only=af9133fb34db457daabde1966c6c90b8
+Required columns:
 
-The source files are not modified by either script.
+| Column | Role |
+| --- | --- |
+| `user_id` | Exact participant identifier |
+| `team_id` | Current MyDreamTeam team identifier |
+| `leadership.score` | Leadership covariate |
+| `project.skill*` | One or more project-skill items used to construct expertise |
 
-### Required columns
+### `relationships.csv`
 
-| Source file | Required columns | Purpose |
-| --- | --- | --- |
-| `users_profiles.csv` | `user_id`, `team_id`, `leadership.score`, and one or more `project.skill*` columns | Team membership, current collaboration, expertise, and leadership |
-| `relationships.csv` | `network_type`, `source`, and `target` | Prior collaboration |
+Required columns:
 
-Files such as `mdt_team_user_ids.csv`, `mdt_team_users_project_skill_average.csv`, and `mdt_team_users_leadership_score.csv` are generated intermediate files. They are not required source inputs.
+| Column | Role |
+| --- | --- |
+| `network_type` | Relationship type; `work` identifies prior collaboration |
+| `source` | First participant in the relationship |
+| `target` | Second participant in the relationship |
+
+> **Critical ID rule:** all raw columns are initially read as strings. An identifier such as `337.10` must never be parsed as a floating-point number, because doing so would convert it to `337.1` and could incorrectly merge two distinct participants.
+
+## Session definition and inclusion
+
+A participant’s session is the substring of `user_id` before the first period:
+
+```text
+337.10       -> session 337
+341.a12bc34  -> session 341
+```
+
+The default threshold is `--min-members 20`. A session is eligible when it has **strictly more than 20** unique participants with nonmissing `user_id` and `team_id` before covariate and isolate filtering.
+
+With the current source files, six sessions satisfy this rule:
+
+```text
+337, 341, 342, 344, 346, 349
+```
 
 ## Variable construction
 
-### Current collaboration
+### Current collaboration network
 
-A node represents a MyDreamTeam participant.
-
-Two participants are connected in the current collaboration network when they share the same nonmissing `team_id` in `users_profiles.csv`.
-
-The resulting network is undirected and binary.
+Within each eligible session, participants with the same `team_id` are treated as current collaborators. Every unordered pair of participants within a current team becomes an undirected edge. Each team therefore forms a clique in the current network.
 
 ### Prior collaboration
 
-Prior collaboration is derived from `relationships.csv`.
+Rows in `relationships.csv` for which `network_type` equals `work` are treated as prior work relationships. Self-ties are removed, duplicate directions are collapsed, and the remaining pairs are treated as undirected.
 
-Rows satisfying the following condition are retained:
+For every session, the script creates a symmetric binary prior-collaboration matrix:
 
-```text
-network_type == "work"
-```
+- `1`: the pair had a recorded prior work relationship;
+- `0`: no recorded prior work relationship;
+- diagonal: always `0`.
 
-The `source` and `target` users in these rows are treated as having a prior collaboration relationship. Directed and duplicated records are converted into unique, binary, undirected user pairs.
+The row and column order exactly matches the final node order.
 
 ### Expertise
 
-Expertise is calculated as the row mean of all available columns beginning with:
-
-```text
-project.skill
-```
-
-This includes columns such as:
-
-```text
-project.skill
-project.skill.1
-project.skill.2
-```
-
-The raw expertise measure is transformed using `log1p` and then z-standardized.
+Expertise is the row mean across every column whose name begins with `project.skill`. Available skill items are averaged while partial missingness is ignored. Expertise is missing only when all project-skill items are missing or the resulting value is non-finite.
 
 ### Leadership
 
-Leadership-related status is measured using:
+Leadership is the numeric value of `leadership.score`. Missing or non-finite values are not retained in the analysis network.
 
-```text
-leadership.score
-```
+## Filtering and validation
 
-The raw leadership measure is transformed using `log1p` and then z-standardized.
+For each eligible session, the preprocessing script:
 
-## Step 1: Python preprocessing
+1. checks that a participant does not belong to multiple current teams in the same session;
+2. aggregates duplicate profile rows to one row per participant;
+3. retains only participants with finite expertise and leadership values;
+4. creates all within-team current collaboration edges;
+5. removes participants who become isolates after covariate filtering;
+6. aligns the node, edge, expertise, leadership, and prior-collaboration files;
+7. verifies unique node IDs, valid edge endpoints, no self-ties, complete covariates, a symmetric binary prior matrix, and identical node ordering across files;
+8. writes output files only after all validation checks pass.
 
-From the repository root, run:
+The audit file preserves the IDs of participants removed because of missing or invalid covariates.
 
-```bash
-python code/mydreamteam/01_prepare_mdt_ergm_inputs.py
-```
+## Run the Python preprocessing
 
-The script:
-
-1. reads `users_profiles.csv` and `relationships.csv`;
-2. normalizes user identifiers;
-3. derives unique user–team memberships;
-4. calculates expertise;
-5. extracts leadership scores;
-6. constructs current same-team collaboration edges;
-7. constructs the binary prior-collaboration matrix;
-8. transforms and standardizes the actor attributes;
-9. removes incomplete cases and resulting isolates;
-10. verifies that the node, edge, and prior-matrix files use the same node set.
-
-### Optional paths
-
-Different file locations can be supplied through command-line options:
+From the repository root:
 
 ```bash
-python code/mydreamteam/01_prepare_mdt_ergm_inputs.py \
-  --users path/to/users_profiles.csv \
-  --relationships path/to/relationships.csv \
-  --output-dir path/to/output
+python code/mydreamteam/01_prepare_mdt_session_networks.py \
+  --users data/raw/mydreamteam/users_profiles.csv \
+  --relationships data/raw/mydreamteam/relationships.csv \
+  --output data/processed/mydreamteam/mdt_by_session \
+  --min-members 20 \
+  --plot
 ```
 
-### Python outputs
+Use `--plot` to save a 600-dpi PNG and a PDF visualization of each current team network. Omit it when only the analysis files are needed.
 
-By default, the script writes:
+Required Python packages:
+
+```bash
+pip install pandas numpy networkx matplotlib
+```
+
+## Generated files
+
+The script creates one subdirectory per eligible session:
 
 ```text
-data/processed/mydreamteam/
-├── mdt_team_memberships.csv
-├── mdt_team_users_project_skill_average.csv
-├── mdt_team_users_leadership_score.csv
-├── mdt_nodes.csv
-├── mdt_edges.csv
-├── mdt_prior_mat.csv
-├── mdt_processing_summary.csv
-└── audit/
+data/processed/mydreamteam/mdt_by_session/
+├── session_covariate_prior_summary.csv
+├── 337/
+├── 341/
+├── 342/
+├── 344/
+├── 346/
+└── 349/
 ```
 
-The primary ERGM input files are:
+Each session directory contains:
 
 | File | Description |
 | --- | --- |
-| `mdt_nodes.csv` | Final nonisolated nodes with complete expertise and leadership covariates |
-| `mdt_edges.csv` | Unique undirected current collaboration edges |
-| `mdt_prior_mat.csv` | Binary symmetric prior-collaboration matrix aligned with the node order |
+| `mdt_current_network_nodes.csv` | Final node list with `node_id` and `team_id` |
+| `mdt_current_network_edges.csv` | Undirected current-team edges with `source`, `target`, and `team_id` |
+| `mdt_team_users_project_skill_average.csv` | Expertise value for every final node |
+| `mdt_team_users_leadership_score.csv` | Leadership value for every final node |
+| `mdt_prior_mat.csv` | Symmetric binary prior-collaboration matrix |
+| `mdt_users_removed_missing_covariates.csv` | Audit of participants excluded for invalid covariates |
+| `session_<ID>_current_team_network.png` | Optional 600-dpi network plot |
+| `session_<ID>_current_team_network.pdf` | Optional vector network plot |
 
-The other files document intermediate processing decisions and data-quality checks.
+The root summary file reports filtering counts, final network size, number of teams, covariate means, number of prior pairs, and prior-matrix dimensions.
 
-`mdt_processing_summary.csv` records the numbers of source rows, unique users, teams, current edges, prior-collaboration pairs, removed observations, and final analytical nodes.
+## Current preprocessing summary
 
-The `audit/` directory records duplicate memberships, conflicting profile values, invalid identifiers, missing covariates, and users assigned to multiple teams.
+The validated notebook run produced the following final session networks:
 
-## Step 2: ERGM estimation in R
+| Session | Nodes | Current edges | Teams | Prior pairs | Isolates removed |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| 337 | 20 | 30 | 5 | 7 | 3 |
+| 341 | 28 | 42 | 7 | 11 | 0 |
+| 342 | 24 | 36 | 6 | 1 | 2 |
+| 344 | 26 | 37 | 7 | 1 | 0 |
+| 346 | 24 | 36 | 6 | 0 | 2 |
+| 349 | 23 | 33 | 6 | 0 | 2 |
 
-After completing the Python preprocessing, run:
+These values should be treated as reproducibility checks for the current version of the source data and preprocessing rules. A changed source file or threshold may produce different values.
 
-```bash
-Rscript code/mydreamteam/02_run_mdt_ergm.R
-```
+## ERGM scripts
 
-The R script reads:
-
-```text
-data/processed/mydreamteam/
-├── mdt_nodes.csv
-├── mdt_edges.csv
-└── mdt_prior_mat.csv
-```
-
-Before model estimation, it verifies:
-
-- unique node identifiers;
-- unique undirected edge pairs;
-- absence of self-loops;
-- agreement between the node and edge sets;
-- agreement between the node order and prior matrix;
-- symmetry and binary values of the prior matrix;
-- absence of missing model covariates.
-
-The R script uses the `expertise_z` and `leadership_z` variables generated by the Python script. It does not transform or standardize these variables a second time.
-
-## ERGM sequence
-
-The models are estimated sequentially:
-
-| Model | Terms |
-| --- | --- |
-| M0 | Edges |
-| M1 | M0 + prior collaboration |
-| M2 | M1 + expertise level |
-| M3 | M2 + absolute difference in expertise |
-| M4 | M3 + leadership level + absolute difference in leadership |
-
-The complete M4 specification is:
-
-```r
-mdt_network ~
-  edges +
-  edgecov(prior_mat) +
-  nodecov("expertise_z") +
-  absdiff("expertise_z") +
-  nodecov("leadership_z") +
-  absdiff("leadership_z")
-```
-
-The `nodecov` terms represent actor attribute levels. The `absdiff` terms represent the absolute difference between the attributes of two actors. A negative `absdiff` coefficient is consistent with a greater probability of collaboration between actors with more similar attribute values, conditional on the other model terms.
-
-## R outputs
-
-The R script writes:
-
-```text
-results/
-├── separate_networks/
-│   └── mydreamteam/
-│       └── mdt_ergm_results.xlsx
-└── figures/
-    └── mdt_collaboration_network.png
-```
-
-The result workbook contains:
-
-| Worksheet | Description |
-| --- | --- |
-| `coefficients` | Coefficient estimates from the complete M4 model |
-| `model_fit` | AIC, BIC, and estimation status for M0–M4 |
-| `network_summary` | Final nodes, edges, density, isolates, and prior-collaboration pairs |
-| `failed_models` | Models that could not be estimated and their error messages |
-| `run_settings` | Model definitions, random seed, package versions, and R version |
-
-After a successful run, the console should report:
-
-```text
-Successful models: 5/5
-```
-
-## Software requirements
-
-### Python
-
-The preprocessing script requires:
-
-```text
-pandas
-numpy
-```
-
-Install these packages with:
+After preprocessing:
 
 ```bash
-pip install pandas numpy
+Rscript code/mydreamteam/02_mdt_separate_ergm.R
+Rscript code/mydreamteam/03_mdt_block_diagonal_ergm.R
 ```
 
-### R
+- `02_mdt_separate_ergm.R` estimates one ERGM per eligible session.
+- `03_mdt_block_diagonal_ergm.R` combines the eligible session networks into a single block-diagonal network while prohibiting cross-session ties.
 
-The ERGM script requires:
+Model specifications, convergence checks, and result-file definitions will be documented with the finalized R scripts.
 
-```r
-install.packages(c(
-  "network",
-  "ergm",
-  "openxlsx",
-  "igraph"
-))
-```
 
-## Complete execution order
-
-Run both scripts from the repository root:
-
-```bash
-python code/mydreamteam/01_prepare_mdt_ergm_inputs.py
-Rscript code/mydreamteam/02_run_mdt_ergm.R
-```
-
-Do not run the R script before the Python script, because the R analysis requires the three processed network files generated during preprocessing.
-
-The source files should be downloaded from that project and placed in
-`data/raw/mydreamteam/`. This repository can provide the processing code and
-derived analysis files without duplicating the original source files.
 
