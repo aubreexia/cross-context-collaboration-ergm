@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use these replication materials, please cite the associated manuscript and this repository."
+title: "SciSciNet ERGM replication materials"
+type: software
+authors:
+  - family-names: Xia
+    given-names: Aubree
+version: 0.1.0
+date-released: 2026-08-31
+license: MIT

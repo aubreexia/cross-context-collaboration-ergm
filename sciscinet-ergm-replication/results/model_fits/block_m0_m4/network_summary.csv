@@ -1,0 +1,11 @@
+"block_id","journal_folder","journal_dataset","expertise_column_used","leadership_column_used","number_of_nodes","number_of_edges","possible_within_journal_dyads","density","number_of_prior_dyads","prior_current_edges","prior_current_nonedges","mean_expertise_z","sd_expertise_z","mean_leadership_z","sd_leadership_z"
+"block_001_Cell","Cell","Cell","expertise_z","leadership_z",882,24871,388521,0.064014557771652,12047,11690,357,4.30242890948842e-16,1,-9.63389106459029e-16,0.999999999999999
+"block_002_Geology","Geology","Geology","expertise_z","leadership_z",71,107,2485,0.0430583501006036,38,29,9,1.5636944008805e-17,1,-4.06560544228931e-17,1
+"block_003_Journal_of_the_ACM","Journal of the ACM","Journal_of_the_ACM","expertise_z","leadership_z",111,165,6105,0.027027027027027,4,3,1,1.20024110770287e-17,1,1.97789732540202e-16,1
+"block_004_Management_Science","Management Science","Management_Science","expertise_z","leadership_z",973,1100,472878,0.00232618138293598,153,100,53,4.09401871773388e-16,0.999999999999998,-8.60337266770162e-16,0.999999999999998
+"block_005_Mind","Mind","Mind","expertise_z","leadership_z",106,113,5565,0.0203054806828392,8,3,5,-9.5835289389813e-17,1,-1.06309091508918e-16,0.999999999999999
+"block_006_Nature_Climate_Change","Nature Climate Change","Nature_Climate_Change","expertise_z","leadership_z",134,543,8911,0.060935921894288,113,54,59,-9.77659081386332e-17,1,4.80544294240739e-17,1
+"block_007_Nature_Materials","Nature Materials","Nature_Materials","expertise_z","leadership_z",240,1591,28680,0.0554741980474198,89,75,14,-2.90508358110249e-16,0.999999999999999,-2.40548322002117e-17,1
+"block_008_Psychological_Science","Psychological Science","Psychological_Science","expertise_z","leadership_z",729,7882,265356,0.0297034926664556,121,88,33,1.35237043328826e-16,1,-1.38861639760387e-15,1
+"block_009_The_Economic_Journal","The Economic Journal","The_Economic_Journal","expertise_z","leadership_z",228,222,25878,0.00857871551124507,17,13,4,1.08100662924028e-16,0.999999999999999,4.16333634234434e-16,1
+"block_010_The_New_England_Journal_of_Medicine","The New England Journal of Medicine","NEJM","expertise_z","leadership_z",556,3846,154290,0.02492708535874,372,227,145,6.20856284049599e-16,0.999999999999998,-5.53613909311735e-16,1

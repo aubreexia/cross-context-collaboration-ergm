@@ -1,0 +1,15 @@
+"analysis_type","unit","status","error"
+"separate","Cell","ok",
+"separate","Geology","ok",
+"separate","Journal_of_the_ACM","ok",
+"separate","Management_Science","ok",
+"separate","Mind","ok",
+"separate","Nature_Climate_Change","ok",
+"separate","Nature_Materials","ok",
+"separate","Psychological_Science","ok",
+"separate","The_Economic_Journal","ok",
+"separate","The_New_England_Journal_of_Medicine","ok",
+"block_diagonal","all_journals","failed","ℹ In index: 1.
+ℹ With name: min.
+Caused by error:
+! vector memory limit of 16.0 Gb reached, see mem.maxVSize()"

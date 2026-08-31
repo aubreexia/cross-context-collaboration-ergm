@@ -1,0 +1,6 @@
+"analysis","model","AIC","BIC","logLik","estimation_method","status","error"
+"block_diagonal_journals","m0_edges",363914.226288853,363926.348304955,-181956.113144427,"MLE","ok",NA
+"block_diagonal_journals","m1_prior",278824.343955219,278848.587987423,-139410.171977609,"MLE","ok",NA
+"block_diagonal_journals","m2_prior_expertise",274403.35332131,274439.719369616,-137198.676660655,"MLE","ok",NA
+"block_diagonal_journals","m3_prior_expertise_similarity",274337.999756581,274386.487820989,-137164.99987829,"MLE","ok",NA
+"block_diagonal_journals","m4_full",272319.345138937,272392.077235549,-136153.672569468,"MLE","ok",NA
