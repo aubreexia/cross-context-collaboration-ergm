@@ -1,0 +1,15 @@
+"language","model","AIC","BIC","logLik","status","error"
+"C","m5_full_gwesp",7233.88005581,7285.22343146246,-3609.940027905,"ok",NA
+"C++","m5_full_gwesp",12017.8583688957,12072.9355673476,-6001.92918444786,"ok",NA
+"CSS","m5_full_gwesp",1266.46663326951,1318.17724704092,-626.233316634755,"ok",NA
+"HTML","m5_full_gwesp",4095.08509508102,4160.02578281891,-2040.54254754051,"ok",NA
+"Java","m5_full_gwesp",24941.476555803,25005.9152683315,-12463.7382779015,"ok",NA
+"JavaScript","m5_full_gwesp",7711.65115015239,7780.39304329592,-3848.8255750762,"ok",NA
+"Jupyter Notebook","m5_full_gwesp",1670.4236553154,1722.58017117366,-828.2118276577,"ok",NA
+"logs",NA,NA,NA,NA,"folder_failed","Missing required GitHub ERGM input file(s) in folder logs:
+- gh_nodes.csv
+- gh_edges.csv
+- gh_prior_mat.csv"
+"Python","m5_full_gwesp",6179.15429013121,6244.91572690131,-3082.5771450656,"ok",NA
+"Ruby","m5_full_gwesp",320.688369295841,348.732841413053,-153.34418464792,"ok",NA
+"TypeScript","m5_full_gwesp",1915.73166991151,1968.23495604801,-950.865834955757,"ok",NA

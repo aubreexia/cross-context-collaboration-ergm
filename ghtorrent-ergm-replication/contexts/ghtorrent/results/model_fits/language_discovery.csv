@@ -1,0 +1,11 @@
+"language_folder","language_root","processed_dir","source_layout","number_of_candidates","number_of_all_valid_triplets","number_of_named_processed_dirs","number_of_csv_files_found","candidate_directories","status","error"
+"C","data/processed/languages/C","data/processed/languages/C","files_directly_in_language_folder",1,1,0,9,"data/processed/languages/C","ok",NA
+"C++","data/processed/languages/C++","data/processed/languages/C++","files_directly_in_language_folder",1,1,0,9,"data/processed/languages/C++","ok",NA
+"CSS","data/processed/languages/CSS","data/processed/languages/CSS","files_directly_in_language_folder",1,1,0,9,"data/processed/languages/CSS","ok",NA
+"HTML","data/processed/languages/HTML","data/processed/languages/HTML","files_directly_in_language_folder",1,1,0,9,"data/processed/languages/HTML","ok",NA
+"Java","data/processed/languages/Java","data/processed/languages/Java","files_directly_in_language_folder",1,1,0,9,"data/processed/languages/Java","ok",NA
+"JavaScript","data/processed/languages/JavaScript","data/processed/languages/JavaScript","files_directly_in_language_folder",1,1,0,9,"data/processed/languages/JavaScript","ok",NA
+"Jupyter Notebook","data/processed/languages/Jupyter Notebook","data/processed/languages/Jupyter Notebook","files_directly_in_language_folder",1,1,0,9,"data/processed/languages/Jupyter Notebook","ok",NA
+"Python","data/processed/languages/Python","data/processed/languages/Python","files_directly_in_language_folder",1,1,0,9,"data/processed/languages/Python","ok",NA
+"Ruby","data/processed/languages/Ruby","data/processed/languages/Ruby","files_directly_in_language_folder",1,1,0,9,"data/processed/languages/Ruby","ok",NA
+"TypeScript","data/processed/languages/TypeScript","data/processed/languages/TypeScript","files_directly_in_language_folder",1,1,0,9,"data/processed/languages/TypeScript","ok",NA

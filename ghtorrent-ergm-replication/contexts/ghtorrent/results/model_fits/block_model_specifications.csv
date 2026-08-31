@@ -1,0 +1,7 @@
+model,terms
+m0_edges,edges
+m1_prior,edges + prior
+m2_prior_expertise,edges + prior + expertise
+m3_prior_expertise_similarity,edges + prior + expertise + absolute expertise difference
+m4_full,edges + prior + expertise + absolute expertise difference + leadership + absolute leadership difference
+m5_full_gwesp,edges + prior + expertise + absolute expertise difference + leadership + absolute leadership difference + GWESP (fixed decay = 0.25)

@@ -1,0 +1,8 @@
+analysis,model,term,Estimate,Std_Error,z_value,p_value,status,error
+block_diagonal_languages,m5_full_gwesp,edges,-6.83608931720895,0.0525723215673624,-130.032098895417,0.0,ok,
+block_diagonal_languages,m5_full_gwesp,edgecov.prior_big,3.2217031245816,0.0241913724316051,133.175706905019,0.0,ok,
+block_diagonal_languages,m5_full_gwesp,nodecov.expertise_model_z,-0.0510081188746435,0.00620417469433409,-8.22158004693616,2.00839384821011e-16,ok,
+block_diagonal_languages,m5_full_gwesp,absdiff.expertise_model_z,-0.148863732989876,0.0093718331108765,-15.884163880075,8.15784733534012e-57,ok,
+block_diagonal_languages,m5_full_gwesp,nodecov.leadership_model_z,0.016074503988919,0.00617820571774248,2.60180782630085,0.00927338001552526,ok,
+block_diagonal_languages,m5_full_gwesp,absdiff.leadership_model_z,-0.119746091743625,0.0112495004297672,-10.6445697292268,1.84836225926486e-26,ok,
+block_diagonal_languages,m5_full_gwesp,gwesp.fixed.0.25,2.36022243437852,0.0449947452124479,52.4555128212074,0.0,ok,
