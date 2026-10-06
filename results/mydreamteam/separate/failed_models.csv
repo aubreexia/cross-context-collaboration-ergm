@@ -1,0 +1,11 @@
+session,model,AIC,BIC,status,error
+6,m5_full_gwesp,,,failed,Unconstrained MCMC sampling did not mix at all. Optimization cannot continue.
+10,m5_full_gwesp,,,failed,subscript out of bounds
+11,m5_full_gwesp,,,failed,subscript out of bounds
+14,m5_full_gwesp,,,failed,Unconstrained MCMC sampling did not mix at all. Optimization cannot continue.
+91,m5_full_gwesp,,,failed,subscript out of bounds
+92,m5_full_gwesp,,,failed,subscript out of bounds
+101,m5_full_gwesp,,,failed,Unconstrained MCMC sampling did not mix at all. Optimization cannot continue.
+130,m5_full_gwesp,,,failed,subscript out of bounds
+133,m5_full_gwesp,,,failed,Unconstrained MCMC sampling did not mix at all. Optimization cannot continue.
+221,m5_full_gwesp,,,failed,Unconstrained MCMC sampling did not mix at all. Optimization cannot continue.

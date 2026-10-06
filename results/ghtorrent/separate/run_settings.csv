@@ -1,0 +1,11 @@
+setting,value
+script_version,GitHub FullProject separate ERGM with GWESP MLE 2026-08-15 v1
+root_directory,[path removed]
+estimation_method,MLE
+binarize_prior,TRUE
+isolate_handling,Remove degree-zero nodes separately within each language; subset prior matrix to the same IDs
+expertise_term,Use existing within-language expertise_z (log1p then standardized by Python pipeline)
+leadership_term,Use existing within-language leadership_z (log1p follower count then standardized by Python pipeline)
+gwesp_decay,0.25
+gwesp_fixed,TRUE
+model_sequence,M0 edges; M1 + prior; M2 + expertise level; M3 + expertise absdiff; M4 + leadership level and absdiff; M5 + GWESP

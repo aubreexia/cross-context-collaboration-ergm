@@ -1,0 +1,13 @@
+journal_folder,candidate_directories,number_of_valid_triplets,number_of_csv_files_found,processed_dir,status,error
+block_diagonal_full_crc,,0,2,,ignored_nonjournal_folder,No complete ERGM input triplet found; auxiliary folder ignored.
+Cell,[path removed],1,4,[path removed],included,
+Ecological Applications,[path removed],1,4,[path removed],included,
+Geology,[path removed],1,4,[path removed],included,
+Journal of the ACM,[path removed],1,4,[path removed],included,
+m4_gof,,0,2,,ignored_nonjournal_folder,No complete ERGM input triplet found; auxiliary folder ignored.
+Nature Climate Change,[path removed],1,4,[path removed],included,
+Nature Materials,[path removed],1,4,[path removed],included,
+Organization Science,[path removed],1,4,[path removed],included,
+Psychological Science,[path removed],1,4,[path removed],included,
+The Economic Journal,[path removed],1,4,[path removed],included,
+The New England Journal of Medicine,[path removed],1,4,[path removed],included,

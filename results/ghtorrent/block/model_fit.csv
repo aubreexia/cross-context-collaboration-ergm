@@ -1,0 +1,7 @@
+analysis,model,AIC,BIC,status,error
+block_diagonal_languages,m0_edges,140868.599111299,140879.608102151,ok,
+block_diagonal_languages,m1_prior,80455.0739736193,80477.0919553216,ok,
+block_diagonal_languages,m2_prior_expertise,80408.0051500313,80441.0321225847,ok,
+block_diagonal_languages,m3_prior_expertise_similarity,80206.1981819451,80250.2341453497,ok,
+block_diagonal_languages,m4_full,80040.9418059187,80106.9957510255,ok,
+block_diagonal_languages,m5_full_gwesp,74983.913421685,75060.976357643,ok,

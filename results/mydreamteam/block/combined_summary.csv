@@ -1,0 +1,2 @@
+analysis,script_version,number_of_sessions,sessions_included,number_of_nodes,number_of_edges,possible_within_session_dyads,within_session_density,number_of_prior_dyads,prior_current_edges,prior_current_nonedges,attribute_transformation,estimation_method,gwesp_decay,cross_session_dyads
+block_diagonal_sessions,"MDT selected-session block-diagonal ERGM M0--M5 with fixed GWESP, 2026-08-23 v2",10,"6, 10, 11, 14, 91, 92, 101, 130, 133, 221",553,1037,16262,0.0637682941827574,1834,336,1498,within-session z-score(log1p(raw value)),MLE,2.5,excluded by blockdiag(block_id)
