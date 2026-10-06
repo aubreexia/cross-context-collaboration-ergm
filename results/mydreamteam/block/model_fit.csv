@@ -1,7 +1,0 @@
-analysis,model,AIC,BIC,status,error
-block_diagonal_sessions,m0_edges,7717.10332912425,7724.79991550102,ok,
-block_diagonal_sessions,m1_prior,7358.38642990666,7373.7796026602,ok,
-block_diagonal_sessions,m2_prior_expertise,7357.41417087451,7380.50393000481,ok,
-block_diagonal_sessions,m3_prior_expertise_similarity,7359.1212920517,7389.90763755877,ok,
-block_diagonal_sessions,m4_full,7361.28975895414,7407.46927721475,ok,
-block_diagonal_sessions,m5_full_gwesp,,,failed,Unconstrained MCMC sampling did not mix at all. Optimization cannot continue.

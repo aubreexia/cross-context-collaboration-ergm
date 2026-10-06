@@ -1,3 +1,0 @@
-journal,model,AIC,BIC,logLik,status,error
-block_diagonal_full_crc,,,,,folder_failed,Missing *_nodes.csv in folder: block_diagonal_full_crc
-m4_gof,,,,,folder_failed,Missing *_nodes.csv in folder: m4_gof

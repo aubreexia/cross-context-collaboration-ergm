@@ -1,5 +1,0 @@
-language,model,AIC,BIC,logLik,status,error
-logs,,,,,folder_failed,"Missing required GitHub ERGM input file(s) in folder logs:
-- gh_nodes.csv
-- gh_edges.csv
-- gh_prior_mat.csv"
