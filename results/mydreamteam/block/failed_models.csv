@@ -1,2 +1,0 @@
-analysis,model,AIC,BIC,status,error
-block_diagonal_sessions,m5_full_gwesp,,,failed,Unconstrained MCMC sampling did not mix at all. Optimization cannot continue.

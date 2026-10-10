@@ -1,6 +1,0 @@
-model,terms
-m0_edges,edges
-m1_prior,edges + prior collaboration
-m2_prior_expertise,edges + prior collaboration + expertise level
-m3_prior_expertise_similarity,edges + prior collaboration + expertise level + absolute expertise difference
-m4_full,edges + prior collaboration + expertise level + absolute expertise difference + leadership level + absolute leadership difference

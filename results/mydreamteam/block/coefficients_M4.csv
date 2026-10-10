@@ -1,7 +1,0 @@
-analysis,model,term,Estimate,Std_Error,MCMC_percent,z_value,p_value,status,error
-block_diagonal_sessions,m4_full,edges,-2.92449014569311,0.0686720082537961,,-42.5863495193684,0,ok,
-block_diagonal_sessions,m4_full,edgecov.prior_big,1.49072854242488,0.072135481419306,,20.6656767667445,7.05609785503117e-95,ok,
-block_diagonal_sessions,m4_full,nodecov.expertise_model_z,-0.0544056485654315,0.0268743801675221,,-2.02444291649864,0.0429245997856451,ok,
-block_diagonal_sessions,m4_full,absdiff.expertise_model_z,-0.0151203105613258,0.0396758410631711,,-0.381096157161521,0.703131898791535,ok,
-block_diagonal_sessions,m4_full,nodecov.leadership_model_z,0.0193760789641405,0.0281843054170384,,0.687477611295928,0.491781804567616,ok,
-block_diagonal_sessions,m4_full,absdiff.leadership_model_z,-0.0336929181617587,0.0408974840157092,,-0.823838408954862,0.410031380331214,ok,
