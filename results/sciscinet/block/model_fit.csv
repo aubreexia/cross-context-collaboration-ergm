@@ -1,0 +1,6 @@
+analysis,model,AIC,BIC,logLik,estimation_method,status,error
+block_diagonal_journals,m0_edges,373486.826514065,373498.918685434,-186742.413257033,MLE,ok,
+block_diagonal_journals,m1_prior,289526.180870549,289550.365213286,-144761.090435274,MLE,ok,
+block_diagonal_journals,m2_prior_expertise,285187.05244022,285223.328954326,-142590.52622011,MLE,ok,
+block_diagonal_journals,m3_prior_expertise_similarity,285069.652970701,285118.021656176,-142530.82648535,MLE,ok,
+block_diagonal_journals,m4_full,283291.491150608,283364.044178821,-141639.745575304,MLE,ok,

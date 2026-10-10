@@ -1,0 +1,151 @@
+"domain","network","term","construct","theta","se"
+"MyDreamTeam","6","edgecov.prior","Prior collaboration",2.62701086521539,0.22579954550925
+"MyDreamTeam","6","nodecov.expertise_model_z","Expertise level",-0.182253227981795,0.0687804616277063
+"MyDreamTeam","6","absdiff.expertise_model_z","Expertise absolute difference",-0.181361862198575,0.0997910133585727
+"MyDreamTeam","6","nodecov.leadership_model_z","Status-related attribute level",0.0733011977909124,0.0644971884234974
+"MyDreamTeam","6","absdiff.leadership_model_z","Status-related attribute difference",-0.13129067804094,0.104751454995255
+"MyDreamTeam","10","edgecov.prior","Prior collaboration",2.56174494442215,0.20593629768404
+"MyDreamTeam","10","nodecov.expertise_model_z","Expertise level",-0.159901690425528,0.0767708460918526
+"MyDreamTeam","10","absdiff.expertise_model_z","Expertise absolute difference",0.0806888780662099,0.114756063305275
+"MyDreamTeam","10","nodecov.leadership_model_z","Status-related attribute level",0.13308496094714,0.0735770006087803
+"MyDreamTeam","10","absdiff.leadership_model_z","Status-related attribute difference",0.0215820453128177,0.115819609233653
+"MyDreamTeam","11","edgecov.prior","Prior collaboration",2.10546443552558,0.259903687416863
+"MyDreamTeam","11","nodecov.expertise_model_z","Expertise level",0.0689554144593206,0.0906888021336853
+"MyDreamTeam","11","absdiff.expertise_model_z","Expertise absolute difference",0.0101129830590861,0.128435852884008
+"MyDreamTeam","11","nodecov.leadership_model_z","Status-related attribute level",-0.0504037428257389,0.0945930524396859
+"MyDreamTeam","11","absdiff.leadership_model_z","Status-related attribute difference",0.00352667426606906,0.13592136023354
+"MyDreamTeam","14","edgecov.prior","Prior collaboration",0.80054355893972,0.210446245928023
+"MyDreamTeam","14","nodecov.expertise_model_z","Expertise level",0.0260848973874774,0.0728795385594573
+"MyDreamTeam","14","absdiff.expertise_model_z","Expertise absolute difference",0.0131304025420153,0.107974501500735
+"MyDreamTeam","14","nodecov.leadership_model_z","Status-related attribute level",-0.0279812722414007,0.0776274582882014
+"MyDreamTeam","14","absdiff.leadership_model_z","Status-related attribute difference",-0.0139289268792594,0.117821492664269
+"MyDreamTeam","91","edgecov.prior","Prior collaboration",2.63944480490752,0.421062684713065
+"MyDreamTeam","91","nodecov.expertise_model_z","Expertise level",-0.0588858106531554,0.119238899934353
+"MyDreamTeam","91","absdiff.expertise_model_z","Expertise absolute difference",0.248207975493387,0.174965434727566
+"MyDreamTeam","91","nodecov.leadership_model_z","Status-related attribute level",0.164931391924248,0.117734612651874
+"MyDreamTeam","91","absdiff.leadership_model_z","Status-related attribute difference",-0.349112761348685,0.180945074343109
+"MyDreamTeam","92","edgecov.prior","Prior collaboration",0.929459870228532,0.235935280676091
+"MyDreamTeam","92","nodecov.expertise_model_z","Expertise level",-0.0829975936950097,0.0866497379856663
+"MyDreamTeam","92","absdiff.expertise_model_z","Expertise absolute difference",0.0729489310383272,0.134804930401047
+"MyDreamTeam","92","nodecov.leadership_model_z","Status-related attribute level",0.102616196369755,0.102820931577356
+"MyDreamTeam","92","absdiff.leadership_model_z","Status-related attribute difference",0.0683227671789876,0.146205935555297
+"MyDreamTeam","101","edgecov.prior","Prior collaboration",2.32119085514705,0.41881296541823
+"MyDreamTeam","101","nodecov.expertise_model_z","Expertise level",0.0239446228192154,0.131691454589969
+"MyDreamTeam","101","absdiff.expertise_model_z","Expertise absolute difference",0.10618034258576,0.189322824515115
+"MyDreamTeam","101","nodecov.leadership_model_z","Status-related attribute level",-0.0401747779337159,0.146805329194094
+"MyDreamTeam","101","absdiff.leadership_model_z","Status-related attribute difference",-0.105978228489204,0.218192151372262
+"MyDreamTeam","130","edgecov.prior","Prior collaboration",1.02880789804169,0.4491939500315
+"MyDreamTeam","130","nodecov.expertise_model_z","Expertise level",-0.0630549550843629,0.0870571520100473
+"MyDreamTeam","130","absdiff.expertise_model_z","Expertise absolute difference",-0.154002057433388,0.132751265021557
+"MyDreamTeam","130","nodecov.leadership_model_z","Status-related attribute level",0.050632545044799,0.0995914501742072
+"MyDreamTeam","130","absdiff.leadership_model_z","Status-related attribute difference",0.0982721588642557,0.135368837999731
+"MyDreamTeam","133","edgecov.prior","Prior collaboration",0.862379932681019,0.263102670139338
+"MyDreamTeam","133","nodecov.expertise_model_z","Expertise level",-0.08905823064665,0.109780195471859
+"MyDreamTeam","133","absdiff.expertise_model_z","Expertise absolute difference",0.0177046142295025,0.167475536787996
+"MyDreamTeam","133","nodecov.leadership_model_z","Status-related attribute level",0.0426092488129702,0.144909293276947
+"MyDreamTeam","133","absdiff.leadership_model_z","Status-related attribute difference",-0.142314422526288,0.190998128218036
+"MyDreamTeam","221","edgecov.prior","Prior collaboration",1.44504504800756,0.196844759513287
+"MyDreamTeam","221","nodecov.expertise_model_z","Expertise level",-0.158770877416064,0.0806946397876897
+"MyDreamTeam","221","absdiff.expertise_model_z","Expertise absolute difference",-0.318412035305084,0.130143358722982
+"MyDreamTeam","221","nodecov.leadership_model_z","Status-related attribute level",-0.157221979303664,0.098347027229322
+"MyDreamTeam","221","absdiff.leadership_model_z","Status-related attribute difference",-0.135878339176632,0.132919605463391
+"GHTorrent","C","edgecov.prior","Prior collaboration",3.95557853841864,0.134869966398313
+"GHTorrent","C","nodecov.expertise_model_z","Expertise level",0.305501947136787,0.0292043224364071
+"GHTorrent","C","absdiff.expertise_model_z","Expertise absolute difference",-1.2800630897225,0.0547426156718273
+"GHTorrent","C","nodecov.leadership_model_z","Status-related attribute level",-0.0276553794413579,0.0242997472369326
+"GHTorrent","C","absdiff.leadership_model_z","Status-related attribute difference",0.0366688450778599,0.0362205890161929
+"GHTorrent","C++","edgecov.prior","Prior collaboration",4.06140417580091,0.139013631273193
+"GHTorrent","C++","nodecov.expertise_model_z","Expertise level",0.0808044474110799,0.0238636647402963
+"GHTorrent","C++","absdiff.expertise_model_z","Expertise absolute difference",-0.0578391220216795,0.0354427206638755
+"GHTorrent","C++","nodecov.leadership_model_z","Status-related attribute level",0.181502045360144,0.0225624181444491
+"GHTorrent","C++","absdiff.leadership_model_z","Status-related attribute difference",-0.510788019068241,0.0321063805856431
+"GHTorrent","CSS","edgecov.prior","Prior collaboration",6.0001531960149,0.212080572451176
+"GHTorrent","CSS","nodecov.expertise_model_z","Expertise level",-0.429956337446744,0.0602322739380775
+"GHTorrent","CSS","absdiff.expertise_model_z","Expertise absolute difference",0.35803937586594,0.0860360320878046
+"GHTorrent","CSS","nodecov.leadership_model_z","Status-related attribute level",0.202327670776317,0.0554525563322084
+"GHTorrent","CSS","absdiff.leadership_model_z","Status-related attribute difference",-0.24439781578236,0.0848112242736285
+"GHTorrent","HTML","edgecov.prior","Prior collaboration",7.07983153445245,0.145397167456704
+"GHTorrent","HTML","nodecov.expertise_model_z","Expertise level",-0.35625504938204,0.0328466986746123
+"GHTorrent","HTML","absdiff.expertise_model_z","Expertise absolute difference",0.0714435508629459,0.045537617156019
+"GHTorrent","HTML","nodecov.leadership_model_z","Status-related attribute level",0.00225588125267596,0.0309560920520966
+"GHTorrent","HTML","absdiff.leadership_model_z","Status-related attribute difference",-0.16696570539709,0.0510270343027245
+"GHTorrent","Java","edgecov.prior","Prior collaboration",3.76143438712823,0.0793782596941559
+"GHTorrent","Java","nodecov.expertise_model_z","Expertise level",0.500123068047608,0.0193285537518943
+"GHTorrent","Java","absdiff.expertise_model_z","Expertise absolute difference",-0.289059909878072,0.0295470493765671
+"GHTorrent","Java","nodecov.leadership_model_z","Status-related attribute level",-0.052147034910964,0.0177304419311511
+"GHTorrent","Java","absdiff.leadership_model_z","Status-related attribute difference",-0.278392258898248,0.025363781318855
+"GHTorrent","JavaScript","edgecov.prior","Prior collaboration",4.92069512250685,0.0873308478373945
+"GHTorrent","JavaScript","nodecov.expertise_model_z","Expertise level",-0.137606114085498,0.0223150719634375
+"GHTorrent","JavaScript","absdiff.expertise_model_z","Expertise absolute difference",0.303443199768053,0.0296803962905212
+"GHTorrent","JavaScript","nodecov.leadership_model_z","Status-related attribute level",-0.130182616736847,0.0226335389044131
+"GHTorrent","JavaScript","absdiff.leadership_model_z","Status-related attribute difference",-0.286314479096129,0.0389652060006206
+"GHTorrent","Jupyter Notebook","edgecov.prior","Prior collaboration",6.1506229355883,0.188494473093287
+"GHTorrent","Jupyter Notebook","nodecov.expertise_model_z","Expertise level",-0.16138477657436,0.0515721472433124
+"GHTorrent","Jupyter Notebook","absdiff.expertise_model_z","Expertise absolute difference",-0.31373408313525,0.0783185926487872
+"GHTorrent","Jupyter Notebook","nodecov.leadership_model_z","Status-related attribute level",0.0871516913920666,0.0501121344281275
+"GHTorrent","Jupyter Notebook","absdiff.leadership_model_z","Status-related attribute difference",-0.0622635619657068,0.0742000950653333
+"GHTorrent","Python","edgecov.prior","Prior collaboration",6.7886045716901,0.0957120179635773
+"GHTorrent","Python","nodecov.expertise_model_z","Expertise level",-0.491956541984636,0.0275743280441178
+"GHTorrent","Python","absdiff.expertise_model_z","Expertise absolute difference",-0.142412195500976,0.0455977628261394
+"GHTorrent","Python","nodecov.leadership_model_z","Status-related attribute level",-0.195879113151154,0.0268758405748091
+"GHTorrent","Python","absdiff.leadership_model_z","Status-related attribute difference",-0.243311542442283,0.0452768018194217
+"GHTorrent","Ruby","edgecov.prior","Prior collaboration",2.25299960468536,0.625171312882529
+"GHTorrent","Ruby","nodecov.expertise_model_z","Expertise level",0.621564418616924,0.179794251546908
+"GHTorrent","Ruby","absdiff.expertise_model_z","Expertise absolute difference",-0.472986859276975,0.25414208389273
+"GHTorrent","Ruby","nodecov.leadership_model_z","Status-related attribute level",0.181802599156242,0.131371100692746
+"GHTorrent","Ruby","absdiff.leadership_model_z","Status-related attribute difference",-0.5968811358099,0.209305979468352
+"GHTorrent","TypeScript","edgecov.prior","Prior collaboration",5.77546199604187,0.170424712042004
+"GHTorrent","TypeScript","nodecov.expertise_model_z","Expertise level",-0.429859474386637,0.0439698854347869
+"GHTorrent","TypeScript","absdiff.expertise_model_z","Expertise absolute difference",0.404519316893049,0.0638557121105327
+"GHTorrent","TypeScript","nodecov.leadership_model_z","Status-related attribute level",-0.0195032073341751,0.0391074999740685
+"GHTorrent","TypeScript","absdiff.leadership_model_z","Status-related attribute difference",-0.281194366262481,0.06777346297595
+"SciSciNet","Cell","edgecov.prior","Prior collaboration",7.02606064369457,0.0566386029184727
+"SciSciNet","Cell","nodecov.expertise_model_z","Expertise level",-0.172330163656269,0.00890647997217929
+"SciSciNet","Cell","absdiff.expertise_model_z","Expertise absolute difference",-0.228814508855167,0.0130911125200393
+"SciSciNet","Cell","nodecov.leadership_model_z","Status-related attribute level",0.124096232500253,0.00711535541745612
+"SciSciNet","Cell","absdiff.leadership_model_z","Status-related attribute difference",-0.0350832232556832,0.0112458034613113
+"SciSciNet","Ecological Applications","edgecov.prior","Prior collaboration",7.08422903633147,0.187443954377777
+"SciSciNet","Ecological Applications","nodecov.expertise_model_z","Expertise level",-0.211816612947849,0.0277933618192798
+"SciSciNet","Ecological Applications","absdiff.expertise_model_z","Expertise absolute difference",0.106118146730468,0.0333421709970383
+"SciSciNet","Ecological Applications","nodecov.leadership_model_z","Status-related attribute level",0.0217469044269273,0.0165238942993294
+"SciSciNet","Ecological Applications","absdiff.leadership_model_z","Status-related attribute difference",-0.21064432250782,0.0266545473207261
+"SciSciNet","Geology","edgecov.prior","Prior collaboration",4.30359031926812,0.448083986617489
+"SciSciNet","Geology","nodecov.expertise_model_z","Expertise level",-0.206199288177117,0.0973529575216897
+"SciSciNet","Geology","absdiff.expertise_model_z","Expertise absolute difference",0.298211173059099,0.144599883798734
+"SciSciNet","Geology","nodecov.leadership_model_z","Status-related attribute level",-0.138732917963759,0.0929406124352661
+"SciSciNet","Geology","absdiff.leadership_model_z","Status-related attribute difference",-0.826823194613085,0.185146967647778
+"SciSciNet","Journal of the ACM","edgecov.prior","Prior collaboration",5.33129023705405,1.23139888592398
+"SciSciNet","Journal of the ACM","nodecov.expertise_model_z","Expertise level",-0.251877832100239,0.13723068795542
+"SciSciNet","Journal of the ACM","absdiff.expertise_model_z","Expertise absolute difference",0.140170824044116,0.155671223904364
+"SciSciNet","Journal of the ACM","nodecov.leadership_model_z","Status-related attribute level",0.0538441804559104,0.0668280174755734
+"SciSciNet","Journal of the ACM","absdiff.leadership_model_z","Status-related attribute difference",-0.0961292343995827,0.100503088873727
+"SciSciNet","Nature Climate Change","edgecov.prior","Prior collaboration",2.65399597664729,0.233759092557977
+"SciSciNet","Nature Climate Change","nodecov.expertise_model_z","Expertise level",-0.0613825679080988,0.0447216791458757
+"SciSciNet","Nature Climate Change","absdiff.expertise_model_z","Expertise absolute difference",-0.284750637899187,0.0667298549610893
+"SciSciNet","Nature Climate Change","nodecov.leadership_model_z","Status-related attribute level",0.0560891462595594,0.0444123368993352
+"SciSciNet","Nature Climate Change","absdiff.leadership_model_z","Status-related attribute difference",-0.257156377675844,0.0672211287039605
+"SciSciNet","Nature Materials","edgecov.prior","Prior collaboration",5.01737568174135,0.308049539937378
+"SciSciNet","Nature Materials","nodecov.expertise_model_z","Expertise level",-0.180599204393408,0.0347870416842458
+"SciSciNet","Nature Materials","absdiff.expertise_model_z","Expertise absolute difference",0.167750249484881,0.0420600252092894
+"SciSciNet","Nature Materials","nodecov.leadership_model_z","Status-related attribute level",0.0183484123926999,0.026892212853715
+"SciSciNet","Nature Materials","absdiff.leadership_model_z","Status-related attribute difference",-0.125581978286904,0.0376564404703356
+"SciSciNet","Organization Science","edgecov.prior","Prior collaboration",6.60089463872435,0.698452577684598
+"SciSciNet","Organization Science","nodecov.expertise_model_z","Expertise level",-0.28373245613418,0.0911610975168128
+"SciSciNet","Organization Science","absdiff.expertise_model_z","Expertise absolute difference",0.100117912862786,0.112553636081703
+"SciSciNet","Organization Science","nodecov.leadership_model_z","Status-related attribute level",0.163392339397034,0.0611243312610508
+"SciSciNet","Organization Science","absdiff.leadership_model_z","Status-related attribute difference",0.183637187885068,0.0878932969606304
+"SciSciNet","Psychological Science","edgecov.prior","Prior collaboration",7.46154936291815,0.266390069285951
+"SciSciNet","Psychological Science","nodecov.expertise_model_z","Expertise level",-0.78199143784535,0.0347938082977395
+"SciSciNet","Psychological Science","absdiff.expertise_model_z","Expertise absolute difference",-0.0631757291591005,0.039990196478462
+"SciSciNet","Psychological Science","nodecov.leadership_model_z","Status-related attribute level",0.2800304116464,0.00993666592222085
+"SciSciNet","Psychological Science","absdiff.leadership_model_z","Status-related attribute difference",-0.943393410542292,0.0215047873800982
+"SciSciNet","The Economic Journal","edgecov.prior","Prior collaboration",6.44826083809264,0.671034907147011
+"SciSciNet","The Economic Journal","nodecov.expertise_model_z","Expertise level",-0.149269929996076,0.110311689974179
+"SciSciNet","The Economic Journal","absdiff.expertise_model_z","Expertise absolute difference",0.0611827736708632,0.126822851759383
+"SciSciNet","The Economic Journal","nodecov.leadership_model_z","Status-related attribute level",0.0203503587997362,0.0576984959284806
+"SciSciNet","The Economic Journal","absdiff.leadership_model_z","Status-related attribute difference",-0.0940626418939066,0.090372937199503
+"SciSciNet","The New England Journal of Medicine","edgecov.prior","Prior collaboration",4.89305121238579,0.122384164949109
+"SciSciNet","The New England Journal of Medicine","nodecov.expertise_model_z","Expertise level",-0.26502091300283,0.0214344675452006
+"SciSciNet","The New England Journal of Medicine","absdiff.expertise_model_z","Expertise absolute difference",-0.222267708235143,0.0296150888388636
+"SciSciNet","The New England Journal of Medicine","nodecov.leadership_model_z","Status-related attribute level",-0.0471102504900757,0.0143142116027677
+"SciSciNet","The New England Journal of Medicine","absdiff.leadership_model_z","Status-related attribute difference",-0.0766333289688885,0.022264413120661

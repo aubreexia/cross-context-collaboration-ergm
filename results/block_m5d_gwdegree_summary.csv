@@ -1,0 +1,4 @@
+domain,model,gwdegree_decay,density_specification,prior_collaboration_estimate,prior_collaboration_odds_ratio,gwdegree_estimate,gwdegree_std_error,minimum_final_model_gof_mc_p_value,gof_simulations,status
+MyDreamTeam,M5-D,0.50,one global edges term; blockdiag only,1.70018025482732,5.4749341861,6.10114798567008,0.653987515011668,0.936,500,fit_returned_inspect_mcmc_and_gof
+GHTorrent,M5-D,0.50,one global edges term; blockdiag only,4.85077990560313,127.840054151139,0.818544632682171,0.0803655420885908,0.84,500,fit_returned_inspect_mcmc_and_gof
+SciSciNet,M5-D,0.50,one global edges term; blockdiag only,7.22252300046178,1369.94106611389,-1.2633446356621,0.048465942687208,0.664,500,fit_returned_inspect_mcmc_and_gof

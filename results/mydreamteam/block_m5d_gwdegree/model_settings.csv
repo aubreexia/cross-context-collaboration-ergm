@@ -1,0 +1,17 @@
+setting,value
+model,M5-D = M4 + gwdegree(0.50 fixed)
+density_specification,one global edges term; blockdiag only
+constraint,blockdiag(block_id)
+gwdegree_decay,0.50
+estimation,MCMLE
+mcmle_maxit,60
+mcmc_burnin,1000000
+mcmc_interval,65536
+mcmle_effective_size,128
+mcmle_last_boost,8
+mcmc_return_stats,8192
+initialization,M4 coefficients plus gwdegree = 0
+gof,constrained gof(~model)
+gof_nsim,500
+gof_mcmc_burnin,1000000
+gof_mcmc_interval,65536

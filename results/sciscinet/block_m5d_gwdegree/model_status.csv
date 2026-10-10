@@ -1,0 +1,2 @@
+model,status,notes
+m5_full_gwdegree,fit_returned_inspect_mcmc_and_gof,Final constrained model-statistic GOF completed; retain the MCMC diagnostic review caveat when reporting.

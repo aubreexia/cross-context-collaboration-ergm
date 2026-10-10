@@ -1,0 +1,32 @@
+Final constrained GOF = ~model
+
+
+Goodness-of-fit for model statistics 
+
+                                  obs        min       mean        max
+edges                      1037.00000  982.00000 1037.63400 1092.00000
+edgecov.prior_big           336.00000  298.00000  335.88000  386.00000
+nodecov.expertise_model_z   -18.68562 -130.62857  -21.73835   71.63635
+absdiff.expertise_model_z  1154.80619 1068.27448 1155.17337 1248.24150
+nodecov.leadership_model_z   22.15082  -60.07787   23.94437   99.12741
+absdiff.leadership_model_z 1092.40501 1024.25556 1092.72752 1163.33987
+gwdeg.fixed.0.5             858.93740  851.93490  859.01942  867.50571
+                           MC p-value
+edges                           1.000
+edgecov.prior_big               1.000
+nodecov.expertise_model_z       0.940
+absdiff.expertise_model_z       0.996
+nodecov.leadership_model_z      0.972
+absdiff.leadership_model_z      0.980
+gwdeg.fixed.0.5                 0.936
+
+              Length Class   Mode   
+network.size     1   -none-  numeric
+GOF              2   formula call   
+pval.model      35   -none-  numeric
+summary.model   35   -none-  numeric
+pobs.model       7   -none-  numeric
+psim.model    3500   -none-  numeric
+bds.model       14   -none-  numeric
+obs.model        7   -none-  numeric
+sim.model     3500   -none-  numeric

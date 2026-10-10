@@ -1,0 +1,8 @@
+model,estimation,term,Estimate,Std_Error,z_value,p_value,Odds_Ratio,CI_95_Lower,CI_95_Upper,interpretation,status
+m5_full_gwdegree,MCMLE,edges,-3.85304967044,0.114825016176245,-33.5558383,7.40006743368423e-247,0.0212149391107,0.0169395068433,0.0265694654296,Dyadic change statistic: odds ratio shown.,fit_returned_inspect_mcmc_and_gof
+m5_full_gwdegree,MCMLE,edgecov.prior_big,1.70018025482732,0.0776104114092895,21.9066002,2.24746101569399e-106,5.4749341861,4.70235688757,6.37444265904,Dyadic change statistic: odds ratio shown.,fit_returned_inspect_mcmc_and_gof
+m5_full_gwdegree,MCMLE,nodecov.expertise_model_z,-0.0844651715525476,0.0374869842996252,-2.25318662,0.0242473845052482,0.91900366229,0.853901304153,0.98906949456,Dyadic change statistic: odds ratio shown.,fit_returned_inspect_mcmc_and_gof
+m5_full_gwdegree,MCMLE,absdiff.expertise_model_z,-0.0160348456801741,0.0432371142110662,-0.37085837,0.710743023765865,0.984093028067,0.904132291145,1.07112542863,Dyadic change statistic: odds ratio shown.,fit_returned_inspect_mcmc_and_gof
+m5_full_gwdegree,MCMLE,nodecov.leadership_model_z,0.0395814446535805,0.0393225368393642,1.00658421,0.314134625849356,1.04037522843,0.963203348933,1.1237301211,Dyadic change statistic: odds ratio shown.,fit_returned_inspect_mcmc_and_gof
+m5_full_gwdegree,MCMLE,absdiff.leadership_model_z,-0.0446174364578984,0.0451532659846103,-0.98813309,0.323087469506777,0.956363281582,0.875361935317,1.0448600624,Dyadic change statistic: odds ratio shown.,fit_returned_inspect_mcmc_and_gof
+m5_full_gwdegree,MCMLE,gwdeg.fixed.0.5,6.10114798567008,0.653987515011668,9.32915055,1.06722773632115e-20,NA,NA,NA,Nonlinear structural term: do not interpret exp(coef) as a dyadic odds ratio.,fit_returned_inspect_mcmc_and_gof

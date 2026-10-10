@@ -1,0 +1,8 @@
+term,observed,min_simulated,mean_simulated,max_simulated,mc_p_value
+edges,42192,41719,42191.63,42839,0.916
+edgecov.prior_big,12387,12299,12374.558,12438,0.664
+nodecov.expertise_model_z,-657.5193,-1582.857,-715.6527,-63.45273,0.832
+absdiff.expertise_model_z,27687.633,27165.049,27677.4328,28273.68735,0.936
+nodecov.leadership_model_z,-4560.2078,-5365.093,-4604.8143,-3545.30599,0.912
+absdiff.leadership_model_z,40779.5459,40106.8,40788.73,41544.2215,1
+gwdeg.fixed.0.5,6241.9481,6177.699,6242.1999,6290.03188,0.944
